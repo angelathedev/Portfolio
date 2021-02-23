@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Angela's Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <!-- Uploads an image of a profile picture -->
+      <img class = "profile-picture" src="images/angelamcbyrd.png" alt="Black and white photo of Angela"/>
+      <div class="logo">Angela McByrd
+      </div>
+      <nav>
+        <ul id = "menu">
+        <!-- Links for each section of the page. When clicked, each link should jump to that section. -->
+        <li><a href = "#About">About Me</a></li>
+        <li><a href = "#Contact">Contact</a></li>
+        <li><a href = "#Portfolio">Portfolio</a></li>
+      </ul>
+      </nav>
+    </header>
+
+    <hr>
+
+    <main>
+    <section>
+    <div class = "group">
+    <div class = "item">
+      <h2>Introduction</h2>
+      <p>Hello, I'm Angela McByrd! I am a current high school math teacher and aspiring software developer. I was born and raised in the beautiful, windy city of Chicago, IL. My determination, care, and creativity make me a special kind of mathematics educator.
+      </p>
+    </div>
+    </section>
+
+      <hr>
+
+    <section>
+      <!-- Links this section to the navigation links -->
+      <a id = "About"><h2>About Me</h2></a>
+      <p>After graduating college, I started teaching middle school science.  I have always had a passion for computer science. I started an after school club teaching students to code using <a href = "https://www.codecademy.com/" target="\_blank">Codecademy</a> and <a href = "https://code.org/" target="\_blank">Code.org</a>. I am excited for the opportunity to apply some of the principles and concepts I have used in the after-school program. I love solving problems and I love working in a team environment!  I have collaborated on curriculum in the past with my fellow educators.  I loved having the opportunity to brainstorm ideas, learn from one another, and create new things. I hope to provide future clients with web applications that are tailored to their desires and needs.  I hope to also provide clients with detailed plans and a sense of assurance that they are receiving the best service with me. </p>
+    </section>
+
+      <hr>
+
+    <!--Portfolio-->
+    <section>
+      <a id = "Portfolio"><h2>Portfolio</h2></a>
+      <div class = "group">
+        <div class = "item">
+          <h2>Local Library Project</h2>
+          <div class = "item">
+          <img class = "local-library" src = "images/Local Library.png" alt = "Photo of Local Library Project">
+        </div>
+          <p>For this <a href = "https://github.com/angelathedev/Local-Library-Project" target = "\_blank">project</a> I built the algorithms to organize an online library dashboard that shows which books are currently available, which books are checked out, and other general statistics about the program.</p>
+          <h3>Skills Used</h3>
+          <ul>
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Git</li>
+          </ul>
+        </div>
+
+        <div class = "item">
+          <h2>Decoder Ring Project</h2>
+          <div class = "item">
+            <img class = "decoder-ring" src = "images/imageplaceholder.jpg" alt = "Photo of Decoder Ring Project">
+          </div>
+          <p>For this <a href = "https://github.com/angelathedev/Decoder-Ring-Project" target = "\_blank">project</a> I built the algorithms to create an application that encodes and decodes fun messages through three different methods: Polybius Square, Caesar Shift, and Substitution Cipher.</p>
+          <h3>Skills Used</h3>
+          <ul>
+            <li>Javascript</li>
+            <li>Node.js</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section> 
+    <hr>
+    <section>
+      <a id = "Contact"><h2>Contact</h2></a>
+      <div class = "item">
+      <form action = "https://formspree.io/f/xknpaanj" method="post"></form>
+      <label for = "full-name"> Name: </label>
+      <input id = "full-name" type = "text" name = "name" required placeholder = "Enter full name"/>
+      
+      <label for = "email-address"> Email: </label>
+      <input id = "email-address" type = "text" name = "email" required placeholder = "Enter email address"/>
+      
+      <label for = "phone-number"> Phone Number: </label>
+      <input id = "phone-number" type = "text" name = "phone" pattern = "[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}
+      " placeholder = "xxx-xxx-xxxx" />
+      
+      <label for = "message"> Message: </label>
+      <textarea id = "message" name = "message" required maxlength = "200" placeholder = "Maximum 200 characters"></textarea>
+      </form>
+    </div>
+    </div>
+    </section>
+    <section>
+      <div class = "group">
+        <!-- Opens my LinkedIn page in a new tab -->
+        <div class = "item item-double">
+        <a href = "https://www.linkedin.com/in/angelamcbyrd/" target="\_blank">LinkedIn</a>
+        <!-- Opens my GitHub page in a new tab -->
+          <a href = "https://github.com/angelathedev" target="\_blank">GitHub</a>
+      <!-- Opens an email client up with a pre-filled email -->
+          <a href="mailto:mcbyrda@gmail.com?subject=Email%20Subject%20Here">Email Me</a>
+      </div>
+    </section>
+    </main>
+    <footer>
+      <p>Thanks for viewing my page!</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

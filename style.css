@@ -1,0 +1,131 @@
+/* General Styles */
+body {
+  background-color: tan;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/*Gives the header a background color, border, and adjusts the padding and margins */
+header{
+  margin-bottom: 0px;
+  text-align: center;
+  background-color: white;
+}
+
+/*Gives the h1 in the header a specific font and size */
+.logo{
+  font-family: cursive;
+  font-size: 50px;
+  margin: 0px;
+  padding: 20px 0 0 0;
+  text-align: center;
+  letter-spacing: -5;
+}
+
+/* Navigation */
+
+header nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  word-spacing: normal;
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li{
+  list-style-type: none;
+}
+
+header nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+/*Gives all the h2 headers a specific font */
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/*Gives all the h3 headers a specific font */
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Centers the profile image and changes it to a round image*/
+.profile-picture{
+  width: 15%;
+  border-radius: 50%;
+}
+
+/*Formats the color of ANY links based on if they are clicked, visted, hovered, or active */
+a:link    { color: black;  }
+a:visited { color: red;   }
+a:hover   { color: blueviolet; }
+a:active  { color: coral;  }
+
+/*Gives the footer a background color, centers the text, and adjusts the margins and padding.  Also gives a border */
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.local-library{
+  width: 100%;
+  margin: 10px 10px;
+}
+
+main img{
+  width: 80%;
+  margin: 10px 10px;
+}
+
+ul{
+  text-align: left;
+}
+.group{
+  display: flex;
+  flex-direction: row;
+}
+
+.item{
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Contact Form */
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 100px;
+}
